@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "living-nature",
+	"version": "${version}",
+	"name": "Living Nature",
+	"description": "Immerse yourself in living nature in minecraft :)",
+	"authors": [
+		"MiguelTFD"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/MiguelTFD"
+	},
+	"license": "MIT",
+	"icon": "assets/living-nature/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.migueltfd.livingnature.LivingNatureMod"
+		],
+		"client": [
+			"com.migueltfd.livingnature.LivingNatureModClient"
+		],
+		"fabric-datagen": [
+			"com.migueltfd.livingnature.LivingNatureModDataGenerator"
+		]
+	},
+	"mixins": [
+		"living-nature.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
